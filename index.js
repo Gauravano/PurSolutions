@@ -67,8 +67,8 @@ $(document).ready(function() {
         });
     });
 
-function fadeAndDisplay(){
-	console.log("Inside fadeAndDisplay ");
+function fadeOutIntro(){
+	console.log("Inside fadeOutIntro ");
 
 	// $("#moveDown").click(function(){
  //        $(".content").fadeOut()
@@ -84,9 +84,17 @@ function fadeAndDisplay(){
 // $('#giffy').animate({height:0, opacity:0}, 'slow', function() {
 //     $(this).remove();
 // });
- $(".content").slideUp();
-  $("#giffy").slideUp();
+
+$('.intro').animate({height:0, opacity:0},"slow", function() {
+});
 
 
+ setTimeout(fadeInPage, 3000)
+
+}
+
+function fadeInPage(){
+	$(this).remove();
+	$("#page").slideDown("slow");
 
 }
