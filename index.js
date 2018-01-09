@@ -75,26 +75,11 @@ $(document).ready(function () {
 function fadeOutIntro(){
 	console.log("Inside fadeOutIntro ");
 
-	// $("#moveDown").click(function(){
- //        $(".content").fadeOut()
- //        $("#giffy").fadeOut()
- //    });
- //    $(".btn2").click(function(){
- //        $("p").fadeIn();
- //    });
-// $('.content').animate({height:0, opacity:0},"slow", function() {
-//     $(this).remove();
-// });
-
-// $('#giffy').animate({height:0, opacity:0}, 'slow', function() {
-//     $(this).remove();
-// });
-
 $('.intro').animate({height:0, opacity:0},"slow", function() {
 });
 
 
- setTimeout(fadeInPage,0)
+ setTimeout(fadeInPage,1000)
 
 }
 
@@ -104,3 +89,44 @@ function fadeInPage(){
 
 }
 
+function fadeOutPage(){
+	console.log("Inside fadeOutPage ");
+
+$('#page').animate({height:0, opacity:0},"slow", function() {
+});
+
+ setTimeout(fadeInPage2,1000)
+
+}
+
+function fadeInPage2(){
+	$(this).remove();
+	$("#page2").slideDown("slow");
+
+}
+
+function fadeOutPage2(){
+	console.log("Inside fadeOutPage2 ");
+
+$('#page2').animate({height:0, opacity:0},"slow", function() {
+});
+
+ setTimeout(fadeInIntro,1000)
+
+}
+
+function fadeInIntro(){
+	$(this).remove();
+	$(".intro").slideDown("slow");
+
+}
+
+function fadeForIntro(){
+	console.log("Inside fadeForIntro ");
+
+$('#page').animate({height:0, opacity:0},"slow", function() {
+});
+
+ setTimeout(fadeInIntro,1000)
+
+}
