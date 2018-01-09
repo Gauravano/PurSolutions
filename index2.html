@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plotting graph</title>
+	
+	<link rel="stylesheet" type="text/css" href="index.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script>
+	
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>  
+</head>
+<body>
+		<div id="cursor">
+  			<div id="circle">
+				<div id="small-circle"></div>
+			</div>	
+		</div> 
+
+		<form id="graphForm" >
+	  <fieldset>
+	    <legend>Enter Coordinates </legend><br>
+	    x1 :
+	    <input type="text" name="firstCordx" value="0">
+	    &emsp;&emsp;&emsp;&emsp;
+	    y1 :
+	    <input type="text" name="firstCordy" value="0"><br><br>
+	    x2 : 
+	    <input type="text" name="secCordx" value="0">
+	    &emsp;&emsp;&emsp;&emsp;
+	    y2 : 
+	    <input type="text" name="thirdCordy" value="0"><br><br>
+	    x3 : 
+	    <input type="text" name="thirdCordx" value="0">
+	    &emsp;&emsp;&emsp;&emsp;
+	    y3 : 
+	    <input type="text" name="thirdCordy" value="0">
+
+	    <br><br>
+	    
+	  </fieldset>
+	</form>
+	<button onClick="plotting()">Plot</button>
+	<div id="myDiv">
+		<!-- Plotly chart will be drawn inside this DIV -->
+	</div>
+
+
+</body>
+<script type="text/javascript" src="index.js">
+</script>
+</html>
