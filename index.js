@@ -67,6 +67,11 @@ $(document).ready(function() {
         });
     });
 
+$(document).ready(function () {
+        // $('#giffy').click(fadeOutIntro());
+    });
+
+
 function fadeOutIntro(){
 	console.log("Inside fadeOutIntro ");
 
@@ -89,7 +94,7 @@ $('.intro').animate({height:0, opacity:0},"slow", function() {
 });
 
 
- setTimeout(fadeInPage, 3000)
+ setTimeout(fadeInPage,0)
 
 }
 
@@ -98,3 +103,4 @@ function fadeInPage(){
 	$("#page").slideDown("slow");
 
 }
+

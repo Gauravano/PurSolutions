@@ -56,7 +56,7 @@ body {
 
 #giffy img{
   width: 100%;
-  height:410px;
+  height:500px;
     position: absolute;
     top: 0;
     left: 0;
@@ -121,8 +121,8 @@ header {
 #page{
   display: none;
   background-color: #f5f5f5;
-   border-top: 90px solid #f5f5f5;
-    border-bottom: 90px solid #f5f5f5;
+   border-top: 70px solid #f5f5f5;
+    border-bottom: 70px solid #f5f5f5;
     position: absolute;
     top: 0;
     left: 0;
@@ -155,7 +155,7 @@ header {
   padding: 0;
   display: inline-block;
   float: right;
-  margin-right: 5%;
+  margin-right: 10%;
 }
 
 .navbar .nav .item {
@@ -165,8 +165,7 @@ header {
   padding: 5px;
   font-weight: 300;
   line-height: 80px;
-  margin-right: 20px;
-  transition: 0.5s ease;
+  margin-right: 30px;
 }
 
 .navbar .nav .item .contact {
@@ -176,7 +175,6 @@ header {
   line-height: 30px;
   padding: 5px;
   border-radius: 2px;
-  transition: 0.5s ease;
 }
 
 .navbar .nav .item a {
@@ -184,60 +182,108 @@ header {
   color: inherit;
   font-family: 'Calibre-Medium';
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 16px; 
 }
 }
 
 .navbar .logo {
   float: left;
   display: inline-block;
-  margin-top: 5px;
-  margin-left: 5%;
-  width: 70px;
-  height: 70px;
-  background-color: firebrick;
-  transition: 0.5s ease;
+  
+  margin-left: 20%;
+  width: 90px;
+  height: 90px;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.navbar .logo img {
-  display: none;
-}
-
-.scrolled {
- transition: 0.5s ease;
-}
-
-.scrolled.navbar {
-  height: 50px; 
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: 0.5s ease;
-
-}
-
-.scrolled.navbar .nav .item {
-  line-height: 40px;
-  transition: 0.5s ease;
-}
-
-.scrolled.navbar .nav .item .contact {
-  display: inline-block;
-  background-color: #ffffff;
-  height: 40px;
-  line-height: 30px;
-  padding: 5px;
-  border-radius: 2px;
-  transition: 0.5s ease;
-}
-
-.scrolled.navbar .logo {
-  float: left;
-  display: inline-block;
-  margin-top: 5px;
-  margin-left: 5%;
-  width: 40px;
-  height: 40px;
-  background-color: firebrick;
-  transition: 0.5s ease;
+#log a{
   font-family: 'Macondo', cursive;
-  font-size:large;  
+  font-size:34px;
+  text-decoration: none;
+  color: black;
+  margin-left: 80px;
+  top:400px;
 }
+
+
+.info1{
+  margin-top: 50px;
+  margin-left: 120px;
+  display: flex;
+}
+
+.logoPic{
+  width: 40%;
+  height:50px;
+}
+
+.logoPic > img{
+  width: 35%;
+  height:50px; 
+}
+
+.head{
+  flex-grow:1.5;
+  font-family: font-family: 'MajestiBanner-Bold';
+  font-size: 40px;
+  line-height: 1;
+  margin-right: 140px;
+  width: 60%;
+}
+
+.detail{
+  display: flex;
+  width:700px;
+ margin-left: 41%; 
+}
+
+.detail div{
+  margin-right: 40px;
+  font-family: 'Calibre-Regular';
+    color: #4C4D58;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.sidepane{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #64656f;
+    letter-spacing: 0.2em;
+    font-family: 'MajestiBanner-Bold';
+    margin-bottom: 25px;
+    text-align: left;
+    width: 300px;
+    white-space: nowrap;
+    padding-left: 15px;
+    transform: rotate(-90deg) translate(0, 40px);
+    transform-origin: 0 0;
+    position: absolute;
+  }
+
+  .lastButt{
+    border:none;  
+    background-color:#f5f5f5;   
+  }
+
+  .lastButt:focus{
+    outline: none;
+  }
+
+.social{
+  position: absolute;
+  margin-left: 60%;
+}
+
+.social a{
+    display: inline-block;
+    padding: 7px;
+    width: 35px;
+    height: 35px;
+    margin-left: 80px;
+    background-color:#f5f5f5; 
+    border-radius: 50%;
+    vertical-align: middle;
+  }
