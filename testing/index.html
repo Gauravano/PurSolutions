@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="title-wrapper">
+    <h1 style="font-family: Montserrat;text-align: center;">Microtubule Self-Assembly Simulation</h1>
+    <p style="font-family: Montserrat;text-align: center;">Investigate the effects of tubulin protein concentration on microtuble self-assembly kinetics in silico.</p>
+  </div>
+
+  <div class="column-wrapper" id="left-column">
+    <div class="textbox-wrapper">
+      <h2 style="font-family: Montserrat;">Microtubule Self-Assembly Assay:</h2>
+      <p style="font-family: Montserrat; display: inline-block; margin-left:5%; margin-right:5%; text-align: justify;">Tubulin protein in solution is heated to 37° C . Heat energy increases the thermal motion of the tubulin molecules, causing them to collide with one another and assemble into microtubules. Microtubule assembly is measured as an increase in the optical density of the solution, as the rod-like shape of microtubules causes the scattering of 340 nm light.</p>
+    </div>
+
+    <div class="textbox-wrapper">
+      <h2 style="font-family: Montserrat;">Experimental Variable Input:</h2>
+      <p style="font-family: Montserrat;  margin-left:5%; margin-right:5%; text-align: justify;">Use the slider to adjust the concentration of tubulin protein used in the microtubule self-assembly reaction.</p>
+    </div>
+    
+    <br>
+
+    <div class="slider-wrapper" id="slider-wrapper">
+      <p style="font-family: Montserrat;">Tubulin Protein Concentration</p>
+      <div style="display: inline-block; width: 60%">
+        <input type="range" min="0" max="5" id="slider-input" step="0.1">
+      </div>
+
+      <div style="display: inline-block; width: 30%">
+        <p id="slider-label" style="font-family: Montserrat;">2.5 mg/ml</p>
+      </div>
+    </div>
+  </div>
+  <div class="column-wrapper" id="right-column">
+    <div class="textbox-wrapper">
+      <h2 style="font-family: Montserrat;">Simulated Data Output:</h2>
+      <p style="font-family: Montserrat;">Data are displayed as an Optical Density versus time plot and fit with a logistic function. The midpoint (x<sub>0</sub>), slope (k), and height (L) are reported.</p>
+    </div>
+    
+    <div class="canvas_plot" id="canvas_plot">
+      <canvas id="plot" style="background: url(img/Axis.png); width: 70%; background-size: 100% 100%;">
+      </canvas>
+  
+      <div class="variable-wrapper">
+        <canvas id="formula" style="background: url(img/formula.png); width: 25%; background-size: 100% 100%;">
+        </canvas>
+        <p id="L-label">L: </p>
+        <p id="x0-label">x<sub>0</sub>: </p>
+        <p id="k-label">k: </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/plot.js"></script>
+</body>
+</html>
+  
